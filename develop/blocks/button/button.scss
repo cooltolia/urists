@@ -1,0 +1,26 @@
+.button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    padding: 12px 20px;
+
+    font-family: $opsans;
+    color: $textcolor;
+    font-size: 25px;
+    font-weight: 400;
+
+    border-radius: 20% 20% 20% 20% / 50% 50% 50% 50%;
+    border: none;
+
+    background-color: $themecolor;
+
+    &--transparent {
+        color: white;
+        background-color: transparent;
+
+        border: 1px solid $themecolor;
+    }
+}

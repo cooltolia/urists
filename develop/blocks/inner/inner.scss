@@ -1,0 +1,17 @@
+.inner {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+    .inner {
+
+    }
+}
+
+@media (max-width: 480px) {
+    .inner {
+
+    }
+}
