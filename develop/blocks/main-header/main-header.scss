@@ -1,0 +1,72 @@
+.main-header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	font-family: $opsans;
+	
+	background-color: transparent;
+}
+
+.main-header__inner {
+	padding: 25px 90px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-header__col {
+	flex: 0 0 auto;
+	margin-right: 25px;
+	
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.main-header__logo {
+	width: 145px;
+	height: 45px;
+	margin-bottom: 5px;
+	
+	background-color: #0ca4f0;
+}
+
+.main-header__logo-desc {
+	display: block;
+	
+	color: #fff;
+	font-size: 10px;
+	font-weight: 300;
+}
+
+.main-header__schedule {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 1.2;
+	
+	b {
+		font-weight: 400;
+	}
+}
+
+.main-header__tel {
+	margin-bottom: 10px;
+	
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.main-header__button {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 300;
+	
+	button {
+		padding: 5px 10px;
+	}
+}

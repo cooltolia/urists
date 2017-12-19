@@ -1,0 +1,183 @@
+.problems {
+	padding-top: 55px;
+	padding-bottom: 50px;
+	
+	font-family: $opsans;
+}
+
+.problems__title {
+	margin-bottom: 240px;
+}
+
+.problems__list {
+	position: relative;
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	width: 52%;
+	padding-top: 34.5%;
+	
+	background-image: url(../images/problems.jpg);
+	background-size: cover;
+	background-position: center center;
+	
+}
+
+.problems__item {
+	position: absolute;
+	width: 205px;
+	padding-top: 115px;
+	
+	color: $textcolor;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: left;
+	
+	&::after {
+		content: '';
+		position: absolute;
+		width: 70px;
+		height: 2px;
+		top: 113px;
+		left: 0;
+		
+		background-color: $themecolor;
+	}
+	
+	&::before {
+		content: '';
+		position: absolute;
+		width: 97px;
+		height: 97px;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		
+		background-size: cover;
+	}
+	
+	&:nth-child(1) {
+		left: -150px;
+		bottom: 30px;
+		
+		&::before {
+			background-image: url('../images/problem1.svg');
+		}
+	}
+	
+	&:nth-child(2) {
+		left: -90px;
+		top: -60px;
+		
+		&::before {
+			background-image: url('../images/problem2.svg');
+		}
+	}
+	
+	&:nth-child(3) {
+		left: 220px;
+		top: -170px;
+		
+		&::before {
+			background-image: url('../images/problem3.svg');
+		}
+	}
+	
+	&:nth-child(4) {
+		right: -130px;
+		top: -60px;
+		
+		&::before {
+			background-image: url('../images/problem4.svg');
+		}
+	}
+	
+	&:nth-child(5) {
+		right: -200px;
+		bottom: 10px;
+		
+		&::before {
+			background-image: url('../images/problem5.svg');
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.problems__item {
+		width: 175px;
+		
+		font-size: 15px;
+		
+		&:nth-child(3) {
+			left: 170px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.problems__title {
+		margin-bottom: 40px;
+	}
+	
+	.problems__list {
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-content: flex-start;
+		align-items: flex-start;
+		padding: 0;
+		
+		background-image: none;
+	}
+	
+	.problems__item {
+		position: relative;
+		width: 160px;
+		margin-left: 10px;
+		margin-bottom: 25px;
+		padding-top: 80px;
+		
+		font-size: 12px;
+		
+		left: 0 !important;
+		right: 0 !important;
+		top: 0 !important;
+		bottom: 0 !important;
+		
+		&::after {
+			width: 36px;
+			top: 67px;
+			left: -1px;
+
+			background-color: $themecolor;
+		}
+		
+		&:first-child(1) {
+			margin-left: 0;
+		}
+		
+		&::before {
+			width: 60px;
+			height: 60px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.problems__item {
+		width: 115px;
+		padding-top: 60px;
+
+		font-size: 10px;
+
+		&::after {
+			top: 57px;
+		}
+
+		&::before {
+			width: 50px;
+			height: 50px;
+		}
+	}
+}

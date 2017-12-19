@@ -1,12 +1,14 @@
 mixin main-header()
-    +b.HEADER.main-header
-        +e.col
-            +e.IMG.logo
-            +e.SPAN.logo-desc Центр по взысканию неустоек
-        +e.col
-            +e.schedule
-                | Работаем без выходных<br>Время работы: с 7-00 до 22-00 
-        +e.col
-            +e.tel 8 (800) 555-55-550
-            +e.A.button
-                +button.--transparent Заказать звонок
+	+b.HEADER.main-header
+		+inner
+			+e.inner
+				+e.col
+					+e.logo
+					+e.SPAN.logo-desc Центр по взысканию неустоек
+				+e.col
+					+e.schedule
+						| Работаем без выходных<br>Время работы: с <b>7-00</b> до <b>22-00</b> 
+				+e.col
+					+e.tel 8 (800) 555-55-550
+					+e.A.button
+						+button.--transparent Заказать звонок

@@ -9,10 +9,10 @@
 
     font-family: $opsans;
     color: $textcolor;
-    font-size: 25px;
-    font-weight: 400;
+    font-size: inherit;
+    font-weight: inherit;
 
-    border-radius: 20% 20% 20% 20% / 50% 50% 50% 50%;
+    border-radius: 50px;
     border: none;
 
     background-color: $themecolor;
