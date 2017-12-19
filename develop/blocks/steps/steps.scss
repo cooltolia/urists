@@ -1,0 +1,130 @@
+.steps {
+    width: 100%;
+    padding-top: 45px;
+
+    background-color: #fafafa;
+
+    font-family: $opsans;
+}
+
+.steps__title {
+    margin-bottom: 140px;
+}
+
+.steps__list {
+    width: 100%;
+    padding: 0 5px;
+    list-style: none;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.steps__item {
+    position: relative;
+    width: 25%;
+    min-width: 25%;
+    max-width: 33%;
+    flex: 1 1 auto;
+    margin: 0 25px 110px;
+}
+
+.steps__heading {
+    position: relative;
+    max-width: 210px;
+    margin: 0 auto 15px;
+
+    color: $textcolor;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.steps__text {
+    position: relative;
+    margin: 0;
+
+    color: $textcolor;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.steps__number {
+    position: absolute;
+    z-index: 0;
+    top: -70px;
+    left: -25px;
+    padding: 35px 50px 37px;
+
+    background-color: #f5f5f5;
+    border-radius: 50%;
+
+    color: $themecolor;
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .steps__title {
+        margin-bottom: 90px;
+    }
+
+    .steps__item {
+        margin-bottom: 80px;
+    }
+
+    .steps__heading {
+        max-width: 150px;
+
+        font-size: 15px;
+    }
+
+    .steps__text {
+        font-size: 14px;
+    }
+
+    .steps__number {
+        top: -50px;
+        left: -35px;
+        padding: 23px 35px 26px;
+
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .steps {
+        padding-top: 40px;
+    }
+
+    .steps__item {
+        min-width: 40%;
+        max-width: 60%;
+        margin: 0 10px 50px;
+    }
+
+    .steps__title {
+        margin-bottom: 70px;
+    }
+
+    .steps__heading {
+        max-width: 100px;
+
+        font-size: 12px;
+    }
+
+    .steps__text {
+        font-size: 11px;
+    }
+
+    .steps__number {
+        top: -40px;
+        padding: 17px 25px 20px;
+
+        font-size: 32px;
+    }
+}

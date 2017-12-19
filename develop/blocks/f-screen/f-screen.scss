@@ -1,15 +1,15 @@
 .f-screen {
 	padding-top: 160px;
 	padding-bottom: 65px;
-	
+
 	background-image: url('../images/f-screen_bg.jpg');
 	background-size: cover;
 }
 
 .f-screen__title {
-	width: 780px;
+	max-width: 780px;
 	margin: 0 auto 40px;
-	
+
 	color: #fff;
 	font-size: 27px;
 	font-weight: 600;
@@ -18,6 +18,73 @@
 }
 
 .f-screen__advantages {
-	width: 780px;
+	max-width: 780px;
+	margin: 0 auto 50px;
+}
+
+.f-screen__footer {
+	max-width: 280px;
 	margin: 0 auto;
+}
+
+.f-screen__appeal {
+	margin: 0 auto 15px;
+
+	color: #fff;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.f-screen__button {
+	display: block;
+
+	font-size: 25px;
+	font-weight: 400;
+	color: #fff;
+
+	.button {
+		margin: 0 auto;
+
+		line-height: 1;
+		padding: 11px 29px 13px;
+	}
+
+	&:hover,
+	&:active {
+		text-decoration: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.f-screen {
+		padding-top: 200px;
+	}
+}
+
+@media (max-width: 480px) {
+	.f-screen {
+		padding-top: 120px;
+		padding-bottom: 20px;
+	}
+
+	.f-screen__title {
+		max-width: 260px;
+		margin-bottom: 35px;
+
+		font-size: 12px;
+	}
+
+	.f-screen__appeal {
+		font-size: 12px;
+	}
+
+	.f-screen__button {
+		font-size: 16px;
+
+		.button {
+			padding: 7px 20px 9px;
+		}
+	}
 }

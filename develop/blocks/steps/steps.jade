@@ -7,7 +7,8 @@ mixin steps()
                 +title Оставьте все трудности нам и просто следите за процессом!
             +e.UL.list
                 each step in steps
-                    +e.LI.item(data-number='#{step.number}')
-                        +e.H3.title #{step.title}
+                    +e.LI.item
+                        +e.number #{step.number}
+                        +e.H3.heading #{step.title}
                         +e.P.text #{step.text}
                 

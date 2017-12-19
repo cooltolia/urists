@@ -1,0 +1,39 @@
+.faq {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 100px;
+
+    font-family: $opsans;
+}
+
+.faq__title {
+    margin-bottom: 70px;
+}
+
+.faq__accordion {
+    width: 90%;
+    max-width: 975px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .faq {
+        padding-top: 50px;
+        padding-bottom: 75px;
+    }
+
+    .faq__title {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq {
+        padding-top: 30px;
+        padding-bottom: 45px;
+    }
+
+    .faq__title {
+        margin-bottom: 35px;
+    }
+}

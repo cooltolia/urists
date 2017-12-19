@@ -1,0 +1,43 @@
+.testimonials {
+    width: 100%;
+    padding: 65px 0;
+
+    background-color: #fcfcfc;
+
+    font-family: $opsans;
+}
+
+.testimonials__title {
+    margin-bottom: 12px;
+}
+
+.testimonials__subtitle {
+    width: 80%;
+    margin: 0 auto 80px;
+
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 45px 0;
+    }
+
+    .testimonials__subtitle {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials {
+        padding: 25px 0;
+    }
+
+    .testimonials__subtitle {
+        margin-bottom: 20px;
+
+        font-size: 12px;
+    }
+}
