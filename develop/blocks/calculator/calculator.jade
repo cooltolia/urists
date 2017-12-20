@@ -1,0 +1,36 @@
+mixin calculator
+	+b.SECTION.calculator
+		+inner
+			+e.title
+				+title Расчитайте, сколько Вы сможете взыскать денег с компании Дальпитерстрой
+			+e.forms
+				+e.col
+					+e.heading.--hidden Расчет суммы
+					+e.FORM.form(action='#' method='post')
+						+e.input-row
+							+e.label(for='price') Цена квартиры по договору
+							+e.INPUT.input(type='number' id='price' name='price' required)
+						+e.input-row
+							+e.label(for='e-date') Дата сдачи объекта (по договору)
+							+e.INPUT.input(id='e-date' name='e-date' data-inputmask="'alias': 'date'" required placeholder='(dd/mm/yyyy)')
+						+e.input-row
+							+e.label(for='r-date') Дата сдачи объекта (фактическая)
+							+e.INPUT.input(id='r-date' name='r-date' data-inputmask="'alias': 'date'" required placeholder='(dd/mm/yyyy)')
+						+e.BUTTON.submit Рассчитать
+				+e.col
+					+e.heading Результаты
+					+e.FORM.form()
+						+e.input-row
+							+e.label(for='fee') Пеня
+							+e.INPUT.input(type='number' id='fee' name='fee' disabled)
+						+e.input-row
+							+e.label(for='moral') Моральный вред
+							+e.INPUT.input(type='number' id='moral' name='moral' disabled)
+						+e.input-row
+							+e.label(for='costs') Расходы на оплату услуг по подготовке искового заявления  и представления интересов в суде
+							+e.INPUT.input(type='number' id='costs' name='costs' disabled)
+						+e.input-row
+							+e.label.--bold(for='result') Итого:
+							+e.INPUT.input(type='text' id='result' name='result' disabled)
+						+e.A.button Интересно?
+						

@@ -38,8 +38,8 @@
           </div>
           <div class="main-header__col">
             <div class="main-header__tel">8 (800) 555-55-550
-            </div><a class="main-header__button"><!-- button --> 
-            <button class="button button--transparent button--light">Заказать звонок
+            </div><a href="#modal1" data-toggle="modal" data-target="#modal1" class="main-header__button"><!-- button --> 
+            <button type="button" class="button button--transparent button--light">Заказать звонок
             </button><!--/ button --> </a>
           </div>
         </div>
@@ -77,8 +77,8 @@
         </div>
         <div class="f-screen__footer">
           <p class="f-screen__appeal">Узнайте, сколько Вы сможете взыскать с компании Дальпитерстрой
-          </p><a href="#" class="f-screen__button"> <!-- button --> 
-          <button class="button">Узнать сумму
+          </p><a href="#modal1=2" data-toggle="modal" data-target="#modal2" class="f-screen__button"> <!-- button --> 
+          <button type="button" class="button">Узнать сумму
           </button><!--/ button --> </a>
         </div>
       </div>
@@ -262,7 +262,59 @@
           </div><!--/ slider --> 
         </div>
       </div>
-    </section><!--/ testimonials --> <!-- faq --> 
+    </section><!--/ testimonials --> <!-- calculator --> 
+    <section class="calculator">
+      <div class="inner">
+        <div class="calculator__title"><!-- title --> 
+          <h2 class="title"> Расчитайте, сколько Вы сможете взыскать денег с компании Дальпитерстрой
+          </h2><!--/ title --> 
+        </div>
+        <div class="calculator__forms">
+          <div class="calculator__col">
+            <div class="calculator__heading calculator__heading--hidden">Расчет суммы
+            </div>
+            <form action="#" method="post" class="calculator__form">
+              <div class="calculator__input-row">
+                <label for="price" class="calculator__label">Цена квартиры по договору
+                </label><input type="number" id="price" name="price" required="true" class="calculator__input"/>
+              </div>
+              <div class="calculator__input-row">
+                <label for="e-date" class="calculator__label">Дата сдачи объекта (по договору)
+                </label><input id="e-date" name="e-date" data-inputmask="'alias': 'date'" required="true" placeholder="(dd/mm/yyyy)" class="calculator__input" type="text"/>
+              </div>
+              <div class="calculator__input-row">
+                <label for="r-date" class="calculator__label">Дата сдачи объекта (фактическая)
+                </label><input id="r-date" name="r-date" data-inputmask="'alias': 'date'" required="true" placeholder="(dd/mm/yyyy)" class="calculator__input" type="text"/>
+              </div>
+              <button class="calculator__submit">Рассчитать
+              </button>
+            </form>
+          </div>
+          <div class="calculator__col">
+            <div class="calculator__heading">Результаты
+            </div>
+            <form class="calculator__form">
+              <div class="calculator__input-row">
+                <label for="fee" class="calculator__label">Пеня
+                </label><input type="number" id="fee" name="fee" disabled="true" class="calculator__input"/>
+              </div>
+              <div class="calculator__input-row">
+                <label for="moral" class="calculator__label">Моральный вред
+                </label><input type="number" id="moral" name="moral" disabled="true" class="calculator__input"/>
+              </div>
+              <div class="calculator__input-row">
+                <label for="costs" class="calculator__label">Расходы на оплату услуг по подготовке искового заявления  и представления интересов в суде
+                </label><input type="number" id="costs" name="costs" disabled="true" class="calculator__input"/>
+              </div>
+              <div class="calculator__input-row">
+                <label for="result" class="calculator__label calculator__label--bold">Итого:
+                </label><input type="text" id="result" name="result" disabled="true" class="calculator__input"/>
+              </div><a class="calculator__button">Интересно?</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section><!--/ calculator --> <!-- faq --> 
     <section class="faq">
       <div class="faq__title"><!-- title --> 
         <h2 class="title"> Часто задаваемы вопросы
@@ -299,9 +351,9 @@
           </h2><!--/ title --> 
         </div>
         <div class="final__buttons"><a href="#" class="final__button"><!-- button --> 
-          <button class="button button--transparent">Задать
+          <button type="button" class="button button--transparent">Задать
           </button><!--/ button --> </a><a href="#" class="final__button"><!-- button --> 
-          <button class="button">Нет вопросов, назначить встречу
+          <button type="button" class="button">Нет вопросов, назначить встречу
           </button><!--/ button --> </a>
         </div>
       </div>
@@ -320,19 +372,71 @@
           <div class="main-footer__col">
             <div class="main-footer__tel">8 (800) 555-55-550
             </div><a class="main-footer__button"><!-- button --> 
-            <button class="button button--transparent button--light">Заказать звонок
+            <button type="button" class="button button--transparent button--light">Заказать звонок
             </button><!--/ button --> </a>
           </div>
         </div>
       </div>
     </header><!--/ main-footer --> 
+    <div id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <form validate="" action="#" method="post" class="modal-form">
+              <div class="modal-input-row">
+                <label for="modal_name" class="modal-label">Имя</label>
+                <input type="number" id="modal_name" name="modal_name" class="modal-input"/>
+              </div>
+              <div class="modal-input-row">
+                <label for="modal_tel1" class="modal-label">Телефон</label>
+                <input id="modal_tel1" name="modal_tel1" data-inputmask="'mask': '+7 (999) 999 99 99'" required="required" placeholder="+7 (___) ___ __ __" class="modal-input"/>
+              </div>
+              <button class="modal-submit">Узнать подробнее</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <form validate="" action="#" method="post" class="modal-form">
+              <div class="modal-input-row">
+                <label for="modal_price" class="modal-label">Цена квартиры по договору</label>
+                <input type="number" id="modal_price" name="modal_price" required="required" class="modal-input"/>
+              </div>
+              <div class="modal-input-row">
+                <label for="modal_e-date" class="modal-label">Дата сдачи объекта (по договору)</label>
+                <input id="modal_e-date" name="modal_e-date" data-inputmask="'alias': 'date'" required="required" placeholder="(dd/mm/yyyy)" class="modal-input"/>
+              </div>
+              <div class="modal-input-row">
+                <label for="modal_r-date" class="modal-label">Дата сдачи объекта (фактическая)</label>
+                <input id="modal_r-date" name="modal_r-date" data-inputmask="'alias': 'date'" required="required" placeholder="(dd/mm/yyyy)" class="modal-input"/>
+              </div>
+              <div class="modal-input-row">
+                <label for="modal_tel2" class="modal-label">Телефон</label>
+                <input id="modal_tel2" name="modal_tel2" data-inputmask="'mask': '+7 (999) 999 99 99'" required="required" placeholder="+7 (___) ___ __ __" class="modal-input"/>
+              </div>
+              <button class="modal-submit">Узнать сумму</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- build:js js/vendor.js -->
     <script src="libs/jquery.min.js"></script>
     <script src="libs/bootstrap.min.js"></script>
     <script src="libs/polyfills/placeholders.min.js"></script>
     <script src="libs/picturefill.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
-    <script src="libs/jquery.maskedinput-1.4.1.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
     <!-- endbuild-->
     <!-- build:js js/main.js-->
     <script src="js/bem.js"></script>

@@ -81,7 +81,9 @@
 	}
 
 	.f-screen__button {
+		max-width: 150px;
 		font-size: 16px;
+		margin: 0 auto;
 
 		.button {
 			padding: 7px 20px 9px;
