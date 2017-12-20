@@ -350,9 +350,9 @@
           <h2 class="title"> Остались вопросы?
           </h2><!--/ title --> 
         </div>
-        <div class="final__buttons"><a href="#" class="final__button"><!-- button --> 
+        <div class="final__buttons"><a href="#modal3" data-toggle="modal" data-target="#modal3" class="final__button"><!-- button --> 
           <button type="button" class="button button--transparent">Задать
-          </button><!--/ button --> </a><a href="#" class="final__button"><!-- button --> 
+          </button><!--/ button --> </a><a href="#modal4" data-toggle="modal" data-target="#modal4" class="final__button"><!-- button --> 
           <button type="button" class="button">Нет вопросов, назначить встречу
           </button><!--/ button --> </a>
         </div>
@@ -425,6 +425,54 @@
                 <input id="modal_tel2" name="modal_tel2" data-inputmask="'mask': '+7 (999) 999 99 99'" required="required" placeholder="+7 (___) ___ __ __" class="modal-input"/>
               </div>
               <button class="modal-submit">Узнать сумму</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <form validate="" action="#" method="post" class="modal-form">
+              <div class="modal-input-row">
+                <label for="modal_name3" class="modal-label">Имя</label>
+                <input type="number" id="modal_name3" name="modal_name3" class="modal-input"/>
+              </div>
+              <div class="modal-input-row">
+                <label for="modal_tel1" class="modal-label">Телефон</label>
+                <input id="modal_tel1" name="modal_tel1" data-inputmask="'mask': '+7 (999) 999 99 99'" required="required" placeholder="+7 (___) ___ __ __" class="modal-input"/>
+              </div>
+              <div class="modal-input-row">
+                <label for="modal_tel3" class="modal-label">Ваш вопрос</label>
+                <textarea id="modal_tel3" name="modal_tel3" required="required" class="modal-input"></textarea>
+              </div>
+              <button class="modal-submit">Узнать подробнее</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <form validate="" action="#" method="post" class="modal-form">
+              <div class="modal-input-row">
+                <label for="modal_name4" class="modal-label">Имя</label>
+                <input type="number" id="modal_name4" name="modal_name4" class="modal-input"/>
+              </div>
+              <div class="modal-input-row">
+                <label for="modal_tel4" class="modal-label">Телефон</label>
+                <input id="modal_tel4" name="modal_tel4" data-inputmask="'mask': '+7 (999) 999 99 99'" required="required" placeholder="+7 (___) ___ __ __" class="modal-input"/>
+              </div>
+              <button class="modal-submit">Назначить встречу</button>
             </form>
           </div>
         </div>

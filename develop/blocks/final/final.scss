@@ -37,7 +37,8 @@
 	}
 
 	&:hover,
-	&:active {
+	&:active,
+	&:focus {
 		text-decoration: none;
 	}
 }
