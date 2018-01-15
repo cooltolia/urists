@@ -9,7 +9,7 @@ mixin calculator
 					+e.FORM.form(action='#' method='post')
 						+e.input-row
 							+e.label(for='price') Цена квартиры по договору
-							+e.INPUT.input(type='number' id='price' name='price' required)
+							+e.INPUT.input(type='text' id='price' name='price' required)
 						+e.input-row
 							+e.label(for='e-date') Дата сдачи объекта (по договору)
 							+e.INPUT.input(id='e-date' name='e-date' data-inputmask="'alias': 'date'" required placeholder='(dd/mm/yyyy)')
