@@ -54,6 +54,22 @@
 	}
 }
 
+.main-header__mail {
+	display: block;
+	margin-top: 5px;
+
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.2;
+	text-align: center;
+
+	&:hover,
+	&:active {
+		color: #fff;
+	}
+}
+
 .main-header__tel {
 	margin-bottom: 10px;
 
