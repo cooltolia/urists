@@ -1194,6 +1194,8 @@ div.pagination ul li a span {
   .main-header__tel {
     margin-bottom: 8px;
     font-size: 12px; }
+  .main-header__mail {
+    font-size: 10px; }
   .main-header__button {
     font-size: 12px; }
   .main-header__col:nth-child(2) {
