@@ -724,6 +724,11 @@ div.pagination ul li a span {
   .calculator__submit:hover {
     color: #fff;
     background-color: transparent; }
+  .calculator__submit.disabled {
+    background-color: #d6d6d6;
+    border-color: #d6d6d6; }
+    .calculator__submit.disabled:hover {
+      background-color: #d6d6d6; }
 
 .calculator__button {
   position: relative;
@@ -757,9 +762,12 @@ div.pagination ul li a span {
   .calculator__button:hover, .calculator__button:active, .calculator__button:focus {
     color: #fff;
     text-decoration: none; }
-  .calculator__button.active:hover, .calculator__button.active:active {
-    background-color: #f5ac3a;
-    color: #1f1f1f; }
+  .calculator__button.active {
+    border: 1px solid #f5ac3a;
+    background-color: #f5ac3a; }
+    .calculator__button.active:hover, .calculator__button.active:active {
+      color: #fff;
+      background-color: transparent; }
 
 @media (max-width: 480px) {
   .calculator {

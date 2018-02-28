@@ -8,10 +8,22 @@ $(".calculator__submit").on("click", function (event) {
     event.preventDefault();
     event.stopPropagation();
 
+    var submit = $('.calculator__submit');
+    var button = $('.calculator__button');
+
+    submit.addClass('disabled');
+    submit.attr('disabled', true);
+
+    button.addClass('active');
+    button.attr('data-target', '#modal1');
+    button.attr('href', '#modal1');
+
     var contract_val_array = $("#e-date").val().split("/");
     var actual_val_array = $("#r-date").val().split("/");
 
-    var flat_price = parseInt($("#price").val().split("/"));
+    var flat_price = $("#price").val();
+    flat_price = flat_price.replace(/ /g, '');
+    flat_price = parseInt(flat_price, 10);
 
     var contract_date = new Date(contract_val_array[2], contract_val_array[1], contract_val_array[0]);
     var actual_date = new Date(actual_val_array[2], actual_val_array[1], actual_val_array[0]);
@@ -47,7 +59,7 @@ $(".calculator__submit").on("click", function (event) {
  */
 $("#price").on("keyup", function () {
 
-    debugger;
+    //debugger;
     var value = $("#price").val();
 
     value = value.toString().replace(/[^\d]/g, "");

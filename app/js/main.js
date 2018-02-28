@@ -101,13 +101,37 @@
 
     
 
+        var submit = $('.calculator__submit');
+
+        var button = $('.calculator__button');
+
+    
+
+        submit.addClass('disabled');
+
+        submit.attr('disabled', true);
+
+    
+
+        button.addClass('active');
+
+        button.attr('data-target', '#modal1');
+
+        button.attr('href', '#modal1');
+
+    
+
         var contract_val_array = $("#e-date").val().split("/");
 
         var actual_val_array = $("#r-date").val().split("/");
 
     
 
-        var flat_price = parseInt($("#price").val().split("/"));
+        var flat_price = $("#price").val();
+
+        flat_price = flat_price.replace(/ /g, '');
+
+        flat_price = parseInt(flat_price, 10);
 
     
 
@@ -179,7 +203,7 @@
 
     
 
-        debugger;
+        //debugger;
 
         var value = $("#price").val();
 

@@ -95,6 +95,15 @@
 		color: #fff;
 		background-color: transparent;
 	}
+
+	&.disabled {
+		background-color: #d6d6d6;
+		border-color: #d6d6d6;
+
+		&:hover {
+			background-color: #d6d6d6;
+		}
+	}
 }
 
 .calculator__button {
@@ -124,10 +133,13 @@
 	}
 	
 	&.active {
+		border: 1px solid $themecolor;
+		background-color: $themecolor;
+
 		&:hover,
 		&:active {
-			background-color: $themecolor;
-			color: $textcolor;
+			color: #fff;
+			background-color: transparent;
 		}
 	}
 }
