@@ -1019,10 +1019,14 @@ div.pagination ul li a span {
     margin-right: 0; }
 
 .main-footer__logo {
-  width: 145px;
+  width: 45px;
   height: 45px;
-  margin-bottom: 5px;
-  background-color: #0ca4f0; }
+  margin: 0 auto 5px; }
+  .main-footer__logo img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto; }
 
 .main-footer__logo-desc {
   display: block;
@@ -1074,9 +1078,8 @@ div.pagination ul li a span {
   .main-footer__inner {
     padding: 10px 10px; }
   .main-footer__logo {
-    width: 98px;
-    height: 28px;
-    margin-bottom: 5px; }
+    width: 28px;
+    height: 28px; }
   .main-footer__logo-desc {
     font-size: 7px; }
   .main-footer__data {
@@ -1138,10 +1141,14 @@ div.pagination ul li a span {
     margin-right: 0; }
 
 .main-header__logo {
-  width: 145px;
+  width: 45px;
   height: 45px;
-  margin-bottom: 5px;
-  background-color: #0ca4f0; }
+  margin: 0 auto 5px; }
+  .main-header__logo img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto; }
 
 .main-header__logo-desc {
   display: block;
@@ -1192,7 +1199,7 @@ div.pagination ul li a span {
   .main-header__inner {
     padding: 10px 10px; }
   .main-header__logo {
-    width: 98px;
+    width: 28px;
     height: 28px;
     margin-bottom: 5px; }
   .main-header__logo-desc {
